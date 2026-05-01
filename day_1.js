@@ -1,6 +1,6 @@
 const fs = require('fs')  // load the filesystem module from the Node.js core library
 
-const numbers = fs.readFileSync("day_1_input.txt", "utf8")  // read file as synchronous read (https://nodejs.org/api/fs.html#fsreadfilesyncpath-options)
+const numbers = fs.readFileSync("input/day_1_input.txt", "utf8")  // read file as synchronous read (https://nodejs.org/api/fs.html#fsreadfilesyncpath-options)
     .split('\n')  // split file into string array using '\n' as separator (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
     .map(Number);  // convert string array -> number array (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
 

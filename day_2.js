@@ -1,6 +1,6 @@
 const fs = require('fs')  // load the filesystem module from the Node.js core library
 
-const lines = fs.readFileSync("day_2_input.txt", "utf8")  // read file as synchronous read
+const lines = fs.readFileSync("input/day_2_input.txt", "utf8")  // read file as synchronous read
     .split('\n')  // split file into string array using '\n' as separator
 
 let valid = 0;  // keeps track of valid passwords
