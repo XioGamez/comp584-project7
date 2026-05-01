@@ -13,7 +13,7 @@ for (let line of lines) {  // loop through each line
     const [min, max] = range.split('-').map(Number);  // split range into min & max numbers (e.g "1-3" → ["1", "3"])
 
     // count times letter appears in pwd
-    const count = [...pwd].filter(char => char === letter).length;  // pwd to array (using spread syntax; https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) -> filter matching letters -> get length (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+    const count = [...pwd].filter(char => char === letter).length;  // pwd to array (using spread syntax; https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) -> filter matching letters (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) -> get length
 
     if (count >= min && count <= max)  // if count is within allowed range
         valid++;  // increment count
